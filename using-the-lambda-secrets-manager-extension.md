@@ -88,3 +88,5 @@ Let's look at X-Ray after the switch to the new extension:
 Notice that Secrets Manager is no longer accessed in the trace, the secrets are pulled from localhost instead. More importantly, the cold and warm invocations are significantly faster.
 
 By default, the Lambda layer will cache your secrets for 10 minutes. More details on this and other options are available in the [Cache secrets using AWS Lambda extensions](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/cache-secrets-using-aws-lambda-extensions.html) documentation.
+
+Making secrets available do your Lambda function is a common requirement. By using the Lambda Parameters and Secrets Extension you can avoid making a round-trip call to Secrets Manager and pull the secrets from the Lambda layer instead. As demonstrated above, this can significantly improve the performance of your Lambda functions.
