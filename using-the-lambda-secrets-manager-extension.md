@@ -1,3 +1,5 @@
+# Using The Lambda Secrets Manager Extension
+
 On October 18th, 2022, AWS [announced](https://aws.amazon.com/about-aws/whats-new/2022/10/aws-parameters-secrets-lambda-extension/) a new Lambda extension that allows Lambda functions to pull secrets from a [Lambda Layer](https://docs.aws.amazon.com/lambda/latest/dg/configuration-layers.html) instead of making a round trip call to the AWS Secrets Manager service. This new extension can significantly reduce the invocation time of your functions. This article will walk through the steps of converting a function that accesses Secrets Manager directly to a function that uses the new extension.
 
 Below is some sample code that accesses Secrets Manager directly:
