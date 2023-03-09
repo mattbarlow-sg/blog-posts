@@ -61,7 +61,7 @@ Once we have the vectorized contents of our source material, `OpensearchVectorCl
 
 Next, `GPTOpensearchIndex` seeds OpenSearch with our data. `GPTOpensearchIndex` will store both the vectors and the original raw text in OpenSearch. This is convenient, because when we run `kNN` lookups to compare strings, we can easily reference the original text.
 
-Finally, `print(query(index, 'How could my roommate steal my Chase card?'))` uses the index we just created to perform a query. I chose this prompt because within the customer complaint data there is an example of someone whose roommate stole their card by guessing the pin code, which was the same code to unlock the phone!
+Finally, `print(query(index, 'How could my roommate steal my Chase card?'))` uses the index we just created to perform a query. I chose this prompt because within the customer complaint data there is an example of someone whose roommate stole their card by guessing the pin code, which was the same code to unlock their phone!
 
 ```
 python main.py
