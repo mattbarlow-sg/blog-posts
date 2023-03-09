@@ -7,7 +7,7 @@ We have all seen how ChatGPT is adept at responding to human queries, but it has
 
 Here is a diagram that explains how this works:
 
-![[Pasted image 20230308104202.png]]
+![Prompt Enhancement Diagram](./Pasted image 20230308104202.png)
 
 Instead of sending a prompt directly to GPT, you intercept the prompt entered by the user. Then you perform a kNN vector similarity search against your proprietary data. The vector similarity search returns facts related to the original prompt. The results from the vector store are appended to the prompt.
 
@@ -19,7 +19,7 @@ There are multiple data store providers that provide kNN lookup for vector store
 # Amazon OpenSearch Service
 To start with, create an Amazon OpenSearch Service domain in the AWS console. For testing purposes you can choose the default options and create a master user and password.
 
-![[Pasted image 20230309090824.png]]
+![Amazon OpenSearch Console](./Pasted image 20230309090824.png)
 
 Once created, check the access policy in the Security configuration tab. See [Identity and Access Management in Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ac.html) and [Fine-graned access control in Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/fgac.html) for instructions on configuring access.
 
