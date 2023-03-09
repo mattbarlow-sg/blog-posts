@@ -88,7 +88,7 @@ def query_from_opensearch():
 	print(query(index, 'How could my roommate steal my Chase card?'))
 ```
 
-Here I demonstrate how to use `LLMPredictor` to fine tune the OpenAI options. In this case I increased the temperature to help ensure a greater variety in the model's output. I then use the `ElasticsearchReader` class to establish a connection to OpenSearch and I create an index from the OpenSearch data using `GPTVectorStoreIndex`. Note that `include_extra_info=False` is required to avoid chunk size limitations.
+Here I demonstrate how to use `LLMPredictor` to configure the OpenAI options. In this case I increased the temperature to help ensure a greater variety in the model's output. I then use the `ElasticsearchReader` class to establish a connection to OpenSearch and I create an index from the OpenSearch data using `GPTVectorStoreIndex`. Note that `include_extra_info=False` is required to avoid chunk size limitations.
 
 Here is the result from our new function:
 ```
