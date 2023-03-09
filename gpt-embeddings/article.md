@@ -76,7 +76,7 @@ Good morning my name is XXXX XXXX and I apprec...
 
 Your roommate could have stolen your Chase card by taking it from your wallet or purse while you were sleeping or when you were not paying attention. He could have also taken it from your room or any other place where you keep it. He could have also used your phone password to guess your PIN and use the card to withdraw money from your account.
 ```
-# Querying OpenSearch Directory
+# Querying OpenSearch Directly
 Now that we've demonstrated how to load data into OpenSearch, how do we perform subsequent queries? Below is an example:
 
 ```Python
